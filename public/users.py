@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Body
+"""from fastapi import APIRouter, Body
 from models.good import Main_User, Main_UserDB, New_Respons
 from typing import Union, Annotated
 
@@ -48,4 +48,4 @@ def delete_person(id:int):
     if user == None:
         return New_Respons(message="Пользователь не найден")
     users_list.remove(user)
-    return users_list
+    return users_list"""
