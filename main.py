@@ -3,13 +3,14 @@ import uvicorn
 from fastapi.responses import PlainTextResponse, FileResponse
 from public.router_users import users_router
 from datetime import datetime
+from db import create_tables, f_bilder
 datetime.utcnow()
 
 
 app = FastAPI()
 
 
-
+create_tables()
 #f_bilder()
 
 app.include_router(users_router)
